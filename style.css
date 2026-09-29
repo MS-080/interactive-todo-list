@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.todo-container {
+    background-color: white;
+    width: 450px;
+    max-width: 90%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input */
+#taskInput {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Add button */
+#addButton {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#addButton:hover {
+    background-color: #555;
+}
+
+/* Error message */
+#message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Task list */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Individual task */
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #f8f8f8;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Task text */
+#taskList li span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Task buttons */
+#taskList li button {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#taskList li button:hover {
+    opacity: 0.8;
+}
+/* Complete button */
+#taskList li button:first-of-type {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Delete button */
+#taskList li button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Buttons */
+#taskList li button {
+    font-weight: bold;
+}
